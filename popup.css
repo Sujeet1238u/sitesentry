@@ -1,0 +1,93 @@
+
+body {
+    width: 300px;
+    padding: 20px;
+    background: rgb(255, 255, 255);
+    border-radius: 20px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+    font-family: Arial, sans-serif;
+    text-align: center;
+    overflow: hidden;
+}
+
+
+h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+
+#timeList {
+    background: #b2dbfd;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+
+.site {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 15px;
+    margin: 6px 0;
+    background: rgb(70, 203, 243);
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    min-height: 50px;
+    box-sizing: border-box;
+}
+
+
+.site img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+
+.site span {
+    flex-grow: 1;
+    text-align: left;
+    font-size: 14px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+
+.site .site-time {
+    text-align: right;
+    margin-left: 10px; /* Add spacing between name and time */
+}
+
+/* Total Time styling */
+#totalTime {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 15px 0;
+    padding: 10px;
+    background: #b2dbfd;
+    border-radius: 10px;
+    text-align: center; /* Center the total time text */
+}
+
+/* Clear Data button styling */
+#clearDataBtn {
+    background: 727D73; /* Updated color code */
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+    width: 100%;
+    transition: background 0.3s;
+}
+
+#clearDataBtn:hover {
+    background: 3674B5; /* Darker shade for hover effect */
+}
