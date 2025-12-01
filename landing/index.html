@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SiteSentry - Track Time & Boost Productivity</title>
+
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <header class="shadow-sm bg-white sticky-top">
+      <div class="container d-flex align-items-center justify-content-between py-2">
+        <div class="logo d-flex align-items-center gap-2">
+            <div class="logo-box">SS</div>
+            <span class="fw-bold fs-5">SiteSentry</span>
+        </div>
+
+        <nav class="d-none d-md-block">
+            <a href="#features" class="mx-2 text-decoration-none fw-semibold text-dark">Features</a>
+            <a href="#how" class="mx-2 text-decoration-none fw-semibold text-dark">How It Works</a>
+            <a href="#faq" class="mx-2 text-decoration-none fw-semibold text-dark">FAQ</a>
+        </nav>
+
+        <button class="btn-primary" id="get-started-btn">Get Started</button>
+      </div>
+    </header>
+
+
+    <section class="hero">
+      <div class="container py-5">
+        <div class="row align-items-center gy-4">
+          <div class="col-md-6 hero-text">
+              <h1>
+                  Track Your Time,<br>
+                  <span>Boost Your Productivity</span>
+              </h1>
+              <p>
+                  Effortlessly track how you spend your time online. Get insights, set goals,
+                  and reclaim your focus with our powerful browser extension.
+              </p>
+
+              <div class="buttons d-flex flex-wrap gap-2">
+                  <button class="btn-primary" id="add-to-chrome-btn">Add to Chrome</button>
+                  <button class="btn-outline"
+                      onclick="document.getElementById('how').scrollIntoView({behavior: 'smooth'})">
+                      See How It Works
+                  </button>
+              </div>
+
+              <div class="small-info mt-2">
+                  <span class="dot"></span>
+                  100% Free & Private
+              </div>
+          </div>
+
+          <div class="col-md-6 text-center hero-img">
+              <img
+                  src="stopwatch(1).png"
+                  alt="Stopwatch illustration"
+              />
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="features" class="section">
+      <div class="container">
+        <h2>Features</h2>
+        <p>Everything you need to stay focused and in control of your time.</p>
+
+        <ul class="feature-list">
+            <li>✔ Automatic tracking of time spent on each website</li>
+            <li>✔ Daily and weekly summaries with total time online</li>
+            <li>✔ Set focus goals and see your progress</li>
+            <li>✔ All data stored locally on your device – fully private</li>
+        </ul>
+      </div>
+    </section>
+
+>
+    <section id="how" class="section">
+      <div class="container">
+        <h2>How It Works</h2>
+        <p>Get started in 3 simple steps.</p>
+
+        <div class="row gy-3">
+          <div class="col-md-4">
+            <div class="step">
+                <h3>1. Install SiteSentry</h3>
+                <p>Load the extension in Chrome and pin it to your toolbar.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="step">
+                <h3>2. Browse as Usual</h3>
+                <p>SiteSentry quietly tracks how much time you spend on each site.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="step">
+                <h3>3. View Insights & Goals</h3>
+                <p>Open the popup to see your stats and how close you are to your focus goal.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="faq" class="section">
+      <div class="container">
+        <h2>FAQ</h2>
+
+        <details>
+            <summary>Is SiteSentry really free?</summary>
+            <p>Yes, it’s completely free to use.</p>
+        </details>
+
+        <details>
+            <summary>Where is my data stored?</summary>
+            <p>All data is stored locally in your browser using Chrome storage.</p>
+        </details>
+
+        <details>
+            <summary>How do I install the extension?</summary>
+            <p>
+                Open <b>chrome://extensions</b> → Turn on Developer mode → Click “Load unpacked” → Select the <b>extension</b> folder.
+            </p>
+        </details>
+      </div>
+    </section>
+
+    <footer>
+        © 2025 SiteSentry — Productivity, simplified.
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        document.getElementById('add-to-chrome-btn').addEventListener('click', () => {
+            alert(
+                'INSTALL STEPS:\n1. Open chrome://extensions\n2. Turn on Developer mode\n3. Click "Load unpacked"\n4. Select the "extension" folder.'
+            );
+        });
+
+        document.getElementById('get-started-btn').addEventListener('click', () => {
+            document.getElementById('how').scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>
